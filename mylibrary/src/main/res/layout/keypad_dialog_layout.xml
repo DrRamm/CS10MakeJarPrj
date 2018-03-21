@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:id="@+id/keypaddialog"
+	android:orientation="vertical"
+	android:background="#ffffff"
+	>
+	
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="Button block" >
+
+		<EditText
+			android:id="@+id/pwdEdtiInput"
+		    android:layout_height="58dip"
+			android:layout_width="fill_parent" 
+			android:layout_marginLeft="2dip"
+			android:layout_marginRight="2dip"
+			android:inputType="textMultiLine"
+			android:gravity="center|center_vertical"
+			android:enabled="false"
+		    android:textSize="38sp"
+			android:textColor="#000000"
+			android:background="@drawable/shape_input"
+			android:textCursorDrawable="@drawable/color_cursor"
+			android:cursorVisible="true"
+			/>
+	
+    </LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dip"
+        android:layout_weight="1"
+        android:tag="Button block" >
+
+		<vpos.keypad.StockKeyboardView
+	        android:id="@+id/keyboard_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="258dp"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			/>
+			<!--android:background="@color/color_e6e6e6"-->
+			<!--android:keyBackground="@drawable/key_draw"-->
+			<!--android:keyTextColor="@color/color_333333"-->
+			<!--android:keyTextSize="28sp"-->
+			<!--android:labelTextSize="28sp"-->
+			<!--android:shadowColor="@color/color_777572"-->
+			<!--android:shadowRadius="0.5"-->
+
+    </LinearLayout>
+</LinearLayout>
